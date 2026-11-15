@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #121212;
+
+  /* Liva Dental brand colors */
+  --color-brand-blue: #12343b;
+  --color-brand-blue-light: #4e8c88;
+  --color-brand-blue-pale: #e4eeec;
+  --color-brand-blue-pale-2: #edf4f3;
+  --color-brand-panel: #f5f8f7;
+  --color-brand-yellow: #c8643b;
+  --color-brand-orange: #c8643b;
+  --color-brand-navy: #12343b;
+  --color-ink: #12343b;
+  --color-ink-2: #12343b;
+  --color-ink-3: #12343b;
+  --color-body: #3f4e4c;
+  --color-card-gray: #ede6da;
+  --color-card-mist: #f5f8f7;
+
+  --shadow-soft: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+
+  --font-heading: var(--font-newsreader);
+  --font-body: var(--font-albert-sans);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-blue: var(--color-brand-blue);
+  --color-brand-blue-light: var(--color-brand-blue-light);
+  --color-brand-blue-pale: var(--color-brand-blue-pale);
+  --color-brand-blue-pale-2: var(--color-brand-blue-pale-2);
+  --color-brand-panel: var(--color-brand-panel);
+  --color-brand-yellow: var(--color-brand-yellow);
+  --color-brand-orange: var(--color-brand-orange);
+  --color-brand-navy: var(--color-brand-navy);
+  --color-ink: var(--color-ink);
+  --color-ink-2: var(--color-ink-2);
+  --color-ink-3: var(--color-ink-3);
+  --color-body: var(--color-body);
+  --color-card-gray: var(--color-card-gray);
+  --color-card-mist: var(--color-card-mist);
+
+  --shadow-soft: var(--shadow-soft);
+
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+  overflow-x: clip;
+  width: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.container-gutter {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 7.5rem);
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100dvh;
+}
+
+.word-reveal-wrap {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+}
