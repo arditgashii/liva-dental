@@ -19,7 +19,7 @@ const albertSans = Albert_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://liva-dental.vercel.app"),
+  metadataBase: new URL("https://liva-dental-beryl.vercel.app"),
   title: "Liva Dental - Gentle hands, honest prices",
   description: "A dental clinic in South Austin, Texas. Clear prices before any work starts, and extra time for nervous patients.",
   icons: {
